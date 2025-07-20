@@ -5,9 +5,9 @@ def get_book_text(filepath):
     with open(filepath) as f:
         return f.read()
 
-# main function to return the printed book text
+# main to return called function
 def main():
-    return print(get_book_text("books/frankenstein.txt"))
-    return get_num_words()
+    # return print(get_book_text("books/frankenstein.txt"))
+    return print(f"{get_num_words("books/frankenstein.txt")} words found in the document")
 
 main()
