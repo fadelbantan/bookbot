@@ -1,11 +1,10 @@
 # function to calculate the number of words in the book
-def get_num_words(get_book_text, filepath):
-    num_words = len(get_book_text(filepath).split())
+def get_num_words(text):
+    num_words = len(text.split())
     return num_words
 
 # print in a dictionary each character's count
-def get_char_count(get_book_text, filepath):
-    text = get_book_text(filepath)  # Get the book text as a string
+def get_char_count(text):
     char_count = {}
     
     for char in text:  # Loop through each character in the string
